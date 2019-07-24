@@ -4,12 +4,12 @@
   angular.module('nameCalculator', [])
 
   .controller('nameCalculatorController', function ($scope) {
-    $scope.name = "Akash";
-    $scope.value = 0;
+    $scope.name = "";
+    $scope.result = 0;
 
-    $scope.calculate() = function () {
-      var totalValue = calculateNumericString($scope.name);
-      $scope.value = totalValue;
+    $scope.calculate = function () {
+      var output = calculateNumericString($scope.name);
+      $scope.result = output;
     };
 
     function calculateNumericString(string) {
