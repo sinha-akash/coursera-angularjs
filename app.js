@@ -4,7 +4,7 @@
   angular.module('nameCalculator', [])
 
   .controller('nameCalculatorController', function ($scope) {
-    $scope.name = "";
+    $scope.name = "Akash";
     $scope.value = 0;
 
     $scope.calculate() = function () {
@@ -14,10 +14,10 @@
 
     function calculateNumericString(string) {
       var totalString = 0;
-      for(var i = 0;i < string.length; i++) {
+      for (var i = 0; i < string.length; i++) {
         totalString += string.charCodeAt(i);
       }
       return totalString;
-    }
+    };
   });
 })();
